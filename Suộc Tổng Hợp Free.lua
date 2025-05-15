@@ -195,10 +195,7 @@ _G.KaitunConfig = {
     ["tag user"] = false,
     ["Send Test Webhook"] = false,
 }
--- Script Here !!!
-kaitun royx 1.txt
 
-Displaying kaitun royx 1.txt.
   end
 })
 Tabs.Main2:AddButton({
@@ -226,5 +223,4 @@ getgenv().Setting = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
   end
 })
-
 
