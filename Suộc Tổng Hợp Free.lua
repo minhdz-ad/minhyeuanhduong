@@ -24,7 +24,7 @@ end)
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 repeat wait() until game:IsLoaded()
 local Window = Fluent:CreateWindow({
-    Title = "Script Tổng Hợp ",
+    Title = "Script Tổng Hợp V2",
     SubTitle = "by minhyeuad",
     TabWidth = 157,
     Size = UDim2.fromOffset(500, 300),
@@ -33,12 +33,10 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-        Main0=Window:AddTab({ Title="toilet" }),
-        Main1=Window:AddTab({ Title="tungtung" }),
-        Main2=Window:AddTab({ Title="traleleo" }),
-        Main3=Window:AddTab({ Title="bribripatapim" }),
-        Main4=Window:AddTab({ Title="bombogini guicini" }),
-       Main5=Window:AddTab({ Title="zipazinibananini" }),
+        Main0=Window:AddTab({ Title="Hehe" }),
+        Main1=Window:AddTab({ Title="Farm raid ok" }),
+        Main2=Window:AddTab({ Title="kaitun" }),
+      
 }
 Tabs.Main0:AddButton({
     Title = "taoyeuhack",
@@ -63,108 +61,170 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/re
 })
 
 Tabs.Main1:AddButton({
-    Title="rubu v3 English ",
+    Title="Astral ",
     Description="",
     Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RubuRz"))()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
   end
 })
 Tabs.Main1:AddButton({
-    Title="rubu v3 VN ",
+    Title="rubu ",
     Description="",
     Callback=function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RuBuRzVn"))()
   end
 })
 Tabs.Main1:AddButton({
-    Title="xeter V1 ",
+    Title="xero ",
     Description="",
     Callback=function()
 	  getgenv().Version = "V1"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))() 
   end
 })
 Tabs.Main2:AddButton({
-    Title="w azure",
+    Title="royx kaitun",
     Description="",
     Callback=function()
-	  getgenv().Team = "Pirates"
-getgenv().AutoLoad = false --Will Load Script On Server Hop
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+
+_G.KaitunConfig = {
+    ["Start Farm"] = true,
+    -- all melee is already do with it self
+    -- auto activate list ( Auto Do List )
+    --[[ //auto activate list//
+        GodHuman, all melee
+        get god human material
+        random fruit , store fruit
+        smart code redeem
+
+        / sea 1
+        auto go sea 2
+        skip farm level
+        saber
+        kill Greybeard (bisento v2)
+
+        / sea 2
+        auto go sea 3
+        kill darkbeard
+        race v2
+        bartilo
+
+        / sea 3
+        kill boss
+
+        dough awaking
+        CDK
+        elite hunter
+    ]]
+    ["Auto Fruit"] = true, -- tween to fruit
+
+    ["RedeemCode Level"] = 2,
+
+    ["white screen"] = false, -- will go white on not focus
+
+    ["Ui Screen"] = false,
+
+    ["LimitFragment"] = 100000,
+
+    -- item
+
+    ["Buy Base Sword"] = true,
+    ["Boss List"] = { -- put boss for farm item ---pls dont put boss that have requirement (like Saber boss dofrmigo) because it already kill if can
+        "The Saw [Lv. 100] [Boss]",
+        "Greybeard [Lv. 750] [Raid Boss]",
+    
+        "Darkbeard [Lv. 1000] [Raid Boss]",
+        "Cursed Captain [Lv. 1325] [Raid Boss]",
+
+        "Captain Elephant [Lv. 1875] [Boss]",
+        "Soul Reaper [Lv. 2100] [Raid Boss]",
+        "Dough King [Lv. 2300] [Raid Boss]",
+        "Cake Prince [Lv. 2300] [Raid Boss]",
+        "rip_indra True Form [Lv. 5000] [Raid Boss]",
+        "Beautiful Pirate [Lv. 1950] [Boss]",
+        "Cake Queen [Lv. 2175] [Boss]"
+    },
+
+    -- sea 1
+    ["PlayerHunter"] = true, -- will do skip lvl too
+    ["Player Hunter Hop"] = true,
+
+    -- sea 2
+    ["Auto Factory"] = true,
+    ["Rengoku"] = true,
+    ["Sea 3 Hop"] = true, -- hop to find fruit
+    ["Race v3"] = true,
+    ["Skip Race v3"] = true, -- will go sea 3 not care u will get race or not
+    ["Instance Soul Guitar"] = false,-- will not go sea 3 if not got dark frag
+    
+    -- sea 3
+    ["CDK"] = true,
+    ["Tushita"] = true,
+    ["Yama"] = true,
+    ["Soul Guitar"] = true,
+    ["Pull Lever"] = true,
+
+    -- Add On
+    ["Farm When Lvl Max"] = "Katakuri", -- Bone , Katakuri , Coco
+    ["Ghoul Race"] = false, -- it beta
+    ["Race Lock"] = {"Human","Mink","Fishman"}, -- Human , Mink , Fishman , Skypiea -- but Skypiea not recommend is hard to kill other pp
+    ["FPS Cap"] = 60,
+
+    ["Buy Haki Color"] = true, -- will buy only Snow White,Pure Red,Winter Sky
+    ["Auto Legendary Sword"] = false,
+    ["Auto TTK"] = false,
+
+    -- Sword
+    ["Mastery Sword"] = true, -- will farm mastery
+    ["Select Rarity"] = {"Mythical","Legendary"}, -- Common , Uncommon,Rare,Legendary,Mythical
+
+    -- Fruit
+    ["Select Main Devil Fruit Sniper"] = {"Kitsune-Kitsune"}, -- if have will eat
+    ["Select Sub Devil Fruit Sniper"] = {"Dragon-Dragon"}, -- will eat if not have main fruit
+    ["Allow Eat Fruit In Inventory"] = true,
+    ["Start Sniper"] = true,
+    
+    -- Fruit2
+    ["Safe Fruit"] = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough","Kitsune-Kitsune"}, -- will not use this fruit to raids or anyting
+
+    -- Webhook
+    ["Link Webhook"] = "",
+    ["Start Webhook"] = false,
+    ["Webhook Mode"] = "Send Every .. min", -- "Send Every .. min","Send On Level Max","Send On Level Max And Every .. min"
+    ["Webhook Minute"] = 10, -- mean 10 Minute
+    ["tag user"] = false,
+    ["Send Test Webhook"] = false,
+}
+-- Script Here !!!
+kaitun royx 1.txt
+
+Displaying kaitun royx 1.txt.
   end
 })
 Tabs.Main2:AddButton({
-    Title="MARU fake",
+    Title="kaitun muruko",
     Description="",
     Callback=function()
-	  getgenv().Team = "Marines"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/KimP/refs/heads/main/MaruHub"))()
+	 getgenv().Mode = "OneClick"
+getgenv().Setting = {
+    ["Team"] = "Marines", -- Options "Pirates", "Marines"
+    ["FucusOnLevel"] = true,
+    ["Fruits"] = {  -- setting for fruits u want
+        ["Primary"] = { -- if current fruit is not in this list, eat/buy
+            "Dragon-Dragon",
+            -- u can configs add mores/remove and must end with , (comma symbol)
+        },
+        ["Normal"] = { -- it just a normal fruit list
+            "Dragon-Dragon",
+            -- u can configs add mores/remove and must end with , (comma symbol)
+        }
+        -- run this for get all fruit name `local t={};for _,v in pairs(game.ReplicatedStorage.Remotes.CommF_:InvokeServer("GetFruits"))do table.insert(t,`"{v.Name}"`)end;setclipboard(table.concat(t, "\n"))`
+    },
+    ["IdleCheck"] = 150, -- every (x) seconds if not moving rejoin
+};
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
   end
 })
-Tabs.Main2:AddButton({
-    Title="Banana-Free ",
-    Description="",
-    Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/kimprobloxdz/Banana-Free/refs/heads/main/Protected_5609200582002947.lua.txt"))()
-  end
-})
-Tabs.Main2:AddButton({
-    Title="xeter hub v2",
-    Description="",
-    Callback=function()
-	  getgenv().Version = "V2"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
-  end
-})
-Tabs.Main3:AddButton({
-    Title="kiwi hub",
-    Description="",
-    Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomfake99/Tomfake99-/refs/heads/main/kiwiObf.lua.txt"))()
-  end
-})
-Tabs.Main3:AddButton({
-    Title="script kaitun",
-    Description="",
-    Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()
-  end
-})
-Tabs.Main3:AddButton({
-    Title="xero hub ",
-    Description="",
-    Callback=function()
-	  getgenv().Team = "Marines"
-getgenv().Hide_Menu = false
-getgenv().Auto_Execute = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
-  end
-})
-Tabs.Main3:AddButton({
-    Title="BlueX-Hub ",
-    Description="",
-    Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
-  end
-})
-Tabs.Main4:AddButton({
-    Title="Teddy hub ",
-    Description="",
-    Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-AUTOPULLLever"))()
-  end
-})
-Tabs.Main4:AddButton({
-    Title="Gia huy hub ",
-    Description="",
-    Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/giahuy-roy/GiaHuy/refs/heads/main/GiaHuy.Hop.FM"))()
-  end
-})
-Tabs.Main5:AddButton({
-    Title="turboLite",
-    Description="",
-    Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-})
+
+
